@@ -1,14 +1,32 @@
 {
     "version": "0.2.0",
     "configurations": [
+        // {
+        //     "type": "node",
+        //     "request": "attach",
+        //     "name": "Quick Attach",
+        //     "port": 18531,
+        //     "sourceMaps": true,
+        //     "address": "localhost",
+        //     // "localRoot": "/Users/darek/ProjectsMac/mobileart/test-nodemon-vscode/dist",
+        //     // "smartStep": true,
+        //     // "stopOnEntry": true,
+        //     "outFiles": [
+        //         "/Users/darek/ProjectsMac/mobileart/test-nodemon-vscode/dist/*.js"
+        //     ],
+        //     "restart": true
+        // },
         {
             "type": "node",
-            "request": "attach",
-            "name": "Quick Attach",
-            "port": 18531,
+            "request": "launch",
+            "remoteRoot": "${workspaceRoot}/dist",
+            "name": "Lanuch full nodemon",
+            "runtimeExecutable": "nodemon",
+            "program": "${workspaceFolder}/dist/index.js",
+            "restart": true,
             "sourceMaps": true,
-            "address": "localhost",
-            "restart": true
+            "console": "internalConsole",
+            "internalConsoleOptions": "neverOpen"
         }
     ]
 }

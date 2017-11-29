@@ -13,7 +13,7 @@ app.use(methodOverride());
 app.use(errorHandler());
 app.use(cors());
 app.get('/test', function (req, res) {
-    res.send('hello');
+    res.send('it amazing');
 });
 app.listen(port, function () {
     console.log('Server listening on port %d in %s mode', port, app.settings.env);

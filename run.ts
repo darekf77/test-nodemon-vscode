@@ -25,7 +25,7 @@ const portNumber = parseInt(JSON5.parse(fs.readFileSync(path.join(__dirname, '.v
     .toString()).configurations.find(c => c.request && c.request === 'attach').port)
 // NODEMON PROCESS
 const nodemonLocal = path.join(process.cwd(), 'node_modules', '.bin', 'nodemon');
-const nodemonComman = `${nodemonLocal} --inspect=${portNumber} dist/index.js`;
+const nodemonComman = `${nodemonLocal} --debug=${portNumber} dist/index.js`;
 console.log(nodemonComman)
 const serverNodemon = child_process.exec(nodemonComman, { cwd: cwd.server })
 log(serverNodemon);
