@@ -14,7 +14,7 @@ app.use(errorHandler());
 app.use(cors());
 
 app.get('/test', (req, res) => {
-    res.send('it amazing')
+    res.send('it is amazing thing')
 });
 
 app.listen(port, function () {

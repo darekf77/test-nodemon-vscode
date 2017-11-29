@@ -1,7 +1,19 @@
-# Install
-`npm i`
-# Run
-`npm run start` 
+# Typescirpt/Nodejs/Nodemon hot reload debugging
 
-Command above is handling typescript build and nodemon watching.
+## Install
+`npm i`
+## Run typescript building/watching
+In vscode:
+
+
+ctrl(cmd) + shift + b
+
+or
+
+`npm run start`
+
+## Run debugger
+press **f5** in vscode
+
+
 

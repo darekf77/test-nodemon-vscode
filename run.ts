@@ -21,11 +21,11 @@ const tscLocal = path.join(process.cwd(), 'node_modules', '.bin', 'tsc');
 const serverTsc = child_process.exec(`${tscLocal} -w`, { cwd: cwd.server })
 log(serverTsc);
 
-const portNumber = parseInt(JSON5.parse(fs.readFileSync(path.join(__dirname, '.vscode', 'launch.json'))
-    .toString()).configurations.find(c => c.request && c.request === 'attach').port)
-// NODEMON PROCESS
-const nodemonLocal = path.join(process.cwd(), 'node_modules', '.bin', 'nodemon');
-const nodemonComman = `${nodemonLocal} --debug=${portNumber} dist/index.js`;
-console.log(nodemonComman)
-const serverNodemon = child_process.exec(nodemonComman, { cwd: cwd.server })
-log(serverNodemon);
+// const portNumber = parseInt(JSON5.parse(fs.readFileSync(path.join(__dirname, '.vscode', 'launch.json'))
+//     .toString()).configurations.find(c => c.request && c.request === 'attach').port)
+// // NODEMON PROCESS
+// const nodemonLocal = path.join(process.cwd(), 'node_modules', '.bin', 'nodemon');
+// const nodemonComman = `${nodemonLocal} --debug=${portNumber} dist/index.js`;
+// console.log(nodemonComman)
+// const serverNodemon = child_process.exec(nodemonComman, { cwd: cwd.server })
+// log(serverNodemon);
