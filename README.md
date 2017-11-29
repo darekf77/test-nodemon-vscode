@@ -1,5 +1,7 @@
-## Install
+# Install
 `npm i`
-## Run
-`npm run start` # this command is handling typescript build and nodemon
+# Run
+`npm run start` 
+
+Command above is handling typescript build and nodemon watching.
 
