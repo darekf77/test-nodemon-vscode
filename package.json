@@ -1,21 +1,32 @@
 {
+  "tnp": {
+    "resources": [],
+    "type": "navi",
+    "overrided": {
+      "linkedFolders": [],
+      "ignoreDepsPattern": [
+        "*"
+      ],
+      "includeAsDev": [],
+      "includeOnly": [],
+      "dependencies": {}
+    },
+    "linkedProjects": [],
+    "libReleaseOptions": {
+      "nodts": false,
+      "obscure": false,
+      "ugly": false
+    }
+  },
   "name": "test-nodemon-vscode",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "./node_modules/.bin/ts-node run.ts"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/darekf77/test-nodemon-vscode.git"
   },
-  "author": "df",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/darekf77/test-nodemon-vscode/issues"
   },
-  "homepage": "https://github.com/darekf77/test-nodemon-vscode#readme",
   "dependencies": {
     "@types/node": "^8.0.53",
     "cors": "^2.8.4",
@@ -26,5 +37,6 @@
     "nodemon": "^1.12.1",
     "ts-node": "^3.3.0",
     "typescript": "^2.6.2"
-  }
+  },
+  "devDependencies": {}
 }
